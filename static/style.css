@@ -4,22 +4,23 @@
 
 body{
     background-color: #0984e3;
+    overflow-y: hidden;
 }
 
 .container{
-    width: 300px;
+    width: 90vw;
     background-color: #2d3436;
 
     display: block;
     margin: 0 auto;
 
-    border-radius: 10px;
-    padding-bottom : 50px;
+    border-radius: 10px 10px 0 0;
 }
 
 .app-title{
-    width: 300px;
-    height: 50px;
+    width: 90vw;
+    height: 9vh;
+    /* superior | direita | inferior | esquerda */
     border-radius: 10px 10px 0 0;
 }
 
@@ -31,29 +32,32 @@ body{
     color: #dfe6e9;
 }
 
-.notification-container{
-    background-color: #74b9ff;
-    width: 300px;
-    height: 440px;
-}
-
-.notification-container p{
-    color: #721c24;
-    font-size: 1.2em;
-    margin: 0;
-    text-align: center;
-    padding: 10px 0;
-}
-
 .hashtag-container{
-    width: 300px;
-    height: 220px;
+    width: 90vw;
+    height: auto;
     background-color: #b2bec3;
 }
 .hashtag-container p {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     margin: 0 auto;
     font-size: 1.2em;
     color: #2d3436;
+}
+.hashtag-container img{
+    width: 70%;
+    height: auto;
+}
+.footer{
+    width: 90vw;
+    height: 7vh;
+    background-color: #2d3436;
+    color: aliceblue;
+
+    margin: 0 auto;
+
+    border-radius: 0 0 10px 10px;
+    /* superior | direita | inferior | esquerda */
+    padding: 10px;
+    text-align: center ;
 }

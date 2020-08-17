@@ -3,11 +3,13 @@ import json
 from requests_oauthlib import OAuth1Session
 
 MAX_TWEETS = 100
-BASE_URL = "https://api.twitter.com/1.1/trends/place.json"
+BASE_URL = "https://api.twitter.com/1.1/trends/place.json?id="
 WOEID = "23424768"
 
 
-class MyTwitterSearchClient(object):
+class TTSearchClient(object):
+    name = []
+
     API_KEY = "r3WikNY7EY8HdoCPmABMZK3nz"
     API_SECRET = "dGTEx8LJ2bHsV6wX30WqVeSFf9VGg9AtCKi5Sgvu3hRiEBJ55a"
     ACCESS_TOKEN = "26241017-yv3CoA4u0FdYc0GqXw9x8AbzR6ZQ9VRMnzcEos3nB"
@@ -22,14 +24,6 @@ class MyTwitterSearchClient(object):
     def get_tweets(self):
         url = BASE_URL + WOEID
         response = self.session.get(url)
-        brazils = json.loads(response.content)[0]["trends"]
+        topics = json.loads(response.content)[0]["trends"]
 
-        print(response.content)
-
-        for trend in brazils:
-            print(trend["name"])
-            print(trend["tweet_volume"])
-
-        print([])
-        return []
-
+        return topics

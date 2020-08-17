@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static',    filename='style.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>Twitter Hashtags - webHoock</title>
@@ -11,12 +12,12 @@
         <div class="app-title">
             <p>Twitter Hashtag</p>
         </div>
-        <div class="notification-container">
-            <p>---</p>
-            <div class="hashtag-container">
+        <div class="hashtag-container">
                 <p>---</p>
-            </div>
         </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &#169; Euclides Paim - <span>--</span></p>
     </div>
 <!--    <script src="script.js"></script>-->
     <script type=text/javascript src="{{  url_for('static', filename='script.js') }}"></script>
