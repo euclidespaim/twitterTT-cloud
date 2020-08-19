@@ -10,10 +10,10 @@ WOEID = "23424768"
 class TTSearchClient(object):
     name = []
 
-    API_KEY = "r3WikNY7EY8HdoCPmABMZK3nz"
-    API_SECRET = "dGTEx8LJ2bHsV6wX30WqVeSFf9VGg9AtCKi5Sgvu3hRiEBJ55a"
-    ACCESS_TOKEN = "26241017-yv3CoA4u0FdYc0GqXw9x8AbzR6ZQ9VRMnzcEos3nB"
-    ACCESS_TOKEN_SECRET = "6aDaHzWmCZXzbBavKi3U1iEDCwltOS4HMuQE6jNR4oM3C"
+    API_KEY = " "
+    API_SECRET = " "
+    ACCESS_TOKEN = " "
+    ACCESS_TOKEN_SECRET = " "
 
     def __init__(self):
         self.session = OAuth1Session(self.API_KEY,
